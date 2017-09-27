@@ -10,22 +10,25 @@ function calc(x) {
     {
         document.f1.showdata.value=x;
         document.f1.equalh.value='';
+        document.f1.oneclickop.value='';
     }
     else
     {
     if(document.f1.showdata.value!='' && document.f1.showdata.value!='0')
     {
         document.f1.showdata.value=document.f1.showdata.value+x;
+        document.f1.oneclickop.value='';
     }
     }
 }
 
 function calcop(x) {
 
-    if(x!="=" && document.f1.showdata.value!='' )
+    if(x!="=" && document.f1.showdata.value!='' && document.f1.showdata.value!='0' && document.f1.oneclickop.value==''; )
     {
         document.f1.showdata.value=document.f1.showdata.value+x;
         document.f1.equalh.value='';
+        document.f1.oneclickop.value='Clicked';
     }
     else if(x=='=' && (document.f1.showdata.value.indexOf("+")>0 || document.f1.showdata.value.indexOf("-")>0 || document.f1.showdata.value.indexOf("*")>0 || document.f1.showdata.value.indexOf("/")>0 ))
     {
@@ -39,6 +42,7 @@ function calcop(x) {
 <body>
 <form name="f1" method="Get">
     <input type="hidden" name="equalh">
+    <input type="hidden" name="oneclickop">
 <div id="container">
 <div class="sub_container">
     <br>
