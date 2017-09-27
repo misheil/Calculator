@@ -19,6 +19,11 @@ function calc(x) {
         document.f1.showdata.value=document.f1.showdata.value+x;
         document.f1.oneclickop.value='';
     }
+    else if(document.f1.showdata.value!='' && document.f1.showdata.value=='0')
+    {
+        document.f1.showdata.value=x;
+        document.f1.oneclickop.value='';
+    }
     }
 }
 
