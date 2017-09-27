@@ -1,0 +1,134 @@
+#container{
+    width: 350px;
+    height: 510px;
+    margin: 40px auto;
+    background: #E8E6EA;
+    text-align: center;
+    display: block;
+    box-shadow: 10px 10px 5px #888888;
+    align-content: center;
+    border: 2px solid #ADABB0;
+    border-radius: 25px;
+
+}
+
+.sub_container{
+    width: 90%;
+    height: 15%;
+    margin-top: 1px;
+    vertical-align:middle;
+    align-content: center;
+    text-align: center;
+    display : inline-block;
+}
+
+.sub_container_in1{
+    width: 68%;
+    height: 100%;
+
+    vertical-align: middle;
+
+    text-align: right;
+
+    display : inline-block;
+}
+
+.sub_container_in2{
+    width: 23%;
+    height: 100%;
+    margin-top: 10px;
+    vertical-align: middle;
+    align-content: left;
+    text-align: left;
+
+    display : inline-block;
+}
+
+.button {
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #353535;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #757575}
+
+.button:active {
+    background-color: #888686;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+
+.buttons {
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #353535;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.buttons:hover {background-color: #353535}
+
+.buttons:active {
+    background-color: #353535;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+input {
+    width: 300px;
+    display: block;
+    border: 1px solid #999;
+    height: 35px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    text-align: right;
+}
+
+
+.btn{
+    background-color:red;
+    text-decoration: none;
+}
+
+.card-panel {
+    transition: box-shadow .25s;
+    padding: 8px;
+    margin: -0.5rem 0 1rem 0;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.imgclass{
+border-radius: 70%;
+width: 50px;
+}
+.shadow-demo {
+    background-color: #26a69a;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
