@@ -3,11 +3,14 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
+
 <script>
 
 function calc(x) {
-    if(document.f1.showdata.value=='0' || document.f1.equalh.value=='=')
+    
+    if(document.f1.showdata.value =='0' || document.f1.equalh.value=='=')
     {
+
         document.f1.showdata.value=x;
         document.f1.equalh.value='';
         document.f1.oneclickop.value='';
@@ -19,17 +22,13 @@ function calc(x) {
         document.f1.showdata.value=document.f1.showdata.value+x;
         document.f1.oneclickop.value='';
     }
-    else if(document.f1.showdata.value!='' && document.f1.showdata.value=='0')
-    {
-        document.f1.showdata.value=x;
-        document.f1.oneclickop.value='';
-    }
+    
     }
 }
 
 function calcop(x) {
 
-    if(x!="=" && document.f1.showdata.value!='' && document.f1.showdata.value!='0' && document.f1.oneclickop.value==''; )
+    if(x!="=" && document.f1.showdata.value!='' && document.f1.showdata.value!='0' && document.f1.oneclickop.value=='' )
     {
         document.f1.showdata.value=document.f1.showdata.value+x;
         document.f1.equalh.value='';
@@ -45,6 +44,9 @@ function calcop(x) {
 </script>
 </head>
 <body>
+
+    
+
 <form name="f1" method="Get">
     <input type="hidden" name="equalh">
     <input type="hidden" name="oneclickop">
